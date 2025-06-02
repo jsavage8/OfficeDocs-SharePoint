@@ -116,7 +116,7 @@ Start-SPODataAccessGovernanceInsight -ReportEntity EveryoneExceptExternalUsersAt
 The following PowerShell command triggers the report to capture sites where specific items (files/folders/lists) were shared with EEEU in the last 28 days:
 
 ```powershell
-Start-SPODataAccessGovernanceInsight -ReportEntity EveryoneExceptExternalUsersAtSite -Workload SharePoint -ReportType RecentActivity -Name "PublicSiteViaEEEU"
+Start-SPODataAccessGovernanceInsight -ReportEntity EveryoneExceptExternalUsersForItems -Workload SharePoint -ReportType RecentActivity -Name "PublicSiteViaEEEU"
 ```
 
 Provide the workload value as 'OneDriveForBusiness' to get all OneDrive accounts with the same criteria.
